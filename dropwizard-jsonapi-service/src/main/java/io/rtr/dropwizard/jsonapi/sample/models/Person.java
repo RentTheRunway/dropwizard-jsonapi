@@ -9,23 +9,23 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 @JsonInclude(Include.NON_NULL)
 public class Person extends BaseModel {
 
-	private String name;
-	private String company;
+  private String name;
+  private String company;
 
-	public String getName() {
-		return name;
-	}
+  public String getName() {
+    return name;
+  }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+  public void setName(final String name) {
+    this.name = name;
+  }
 
-	public String getCompany() {
-		return company;
-	}
+  public String getCompany() {
+    return company;
+  }
 
-	public void setCompany(String company) {
-		this.company = company;
-	}
+  public void setCompany(final String company) {
+    this.company = company;
+  }
 
 }

@@ -5,23 +5,23 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
 
 public class JSONAPIModule extends SimpleModule {
 
-	public JSONAPIModule() {
-		super();
-	}
-	
-	@Override
-	public String getModuleName() {
-		return "JSON API Module";
-	}
+  public JSONAPIModule() {
+    super();
+  }
 
-	@Override
-	public void setupModule(SetupContext context) {
-		
-	}
+  @Override
+  public String getModuleName() {
+    return "JSON API Module";
+  }
 
-	@Override
-	public Version version() {
-		return new Version(0,0,1,"SNAPSHOT", "io.rtr.jsonapi", "jsonapi");
-	}
+  @Override
+  public void setupModule(final SetupContext context) {
+
+  }
+
+  @Override
+  public Version version() {
+    return new Version(0, 0, 1, "SNAPSHOT", "io.rtr.jsonapi", "jsonapi");
+  }
 
 }

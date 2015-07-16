@@ -1,18 +1,18 @@
 package io.rtr.jsonapi;
 
+import com.google.common.collect.Lists;
+
 import java.util.Collections;
 import java.util.List;
 
-import com.google.common.collect.Lists;
-
 public class ErrorDocument {
-	private List<Error> errors;
+  private final List<Error> errors;
 
-	public ErrorDocument(Error ...errors) {
-		this.errors = Lists.newArrayList(errors);
-	}
+  public ErrorDocument(final Error... errors) {
+    this.errors = Lists.newArrayList(errors);
+  }
 
-	public List<Error> getErrors() {
-		return Collections.unmodifiableList(this.errors);
-	}
+  public List<Error> getErrors() {
+    return Collections.unmodifiableList(this.errors);
+  }
 }

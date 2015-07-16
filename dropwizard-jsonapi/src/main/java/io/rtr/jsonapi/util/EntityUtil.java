@@ -4,8 +4,8 @@ import io.rtr.jsonapi.annotation.ApiModel;
 
 public class EntityUtil {
 
-  public static String getType(Object data) {
-    ApiModel model = data.getClass().getAnnotation(ApiModel.class);
+  public static String getType(final Object data) {
+    final ApiModel model = data.getClass().getAnnotation(ApiModel.class);
     if (model != null) {
       String type = model.value();
       if ("undefined".equals(type)) {
