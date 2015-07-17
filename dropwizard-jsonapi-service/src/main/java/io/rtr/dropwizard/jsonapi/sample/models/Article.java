@@ -8,31 +8,39 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 @ApiModel("articles")
 @JsonInclude(Include.NON_NULL)
 public class Article {
-	private String id;
-	private String title;
-	private String body;
-	
-	public String getId() {
-		return id;
-	}
+  private String id;
+  private String title;
+  private String body;
 
-	public void setId(String id) {
-		this.id = id;
-	}
+  public Article() {}
 
-	public String getTitle() {
-		return title;
-	}
+  public Article(Article other) {
+    this.id = other.id;
+    this.title = other.title;
+    this.body = other.body;
+  }
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+  public String getId() {
+    return id;
+  }
 
-	public String getBody() {
-		return body;
-	}
+  public void setId(final String id) {
+    this.id = id;
+  }
 
-	public void setBody(String body) {
-		this.body = body;
-	}
+  public String getTitle() {
+    return title;
+  }
+
+  public void setTitle(final String title) {
+    this.title = title;
+  }
+
+  public String getBody() {
+    return body;
+  }
+
+  public void setBody(final String body) {
+    this.body = body;
+  }
 }
