@@ -13,29 +13,29 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@ApiResource( model = Article.class)
+@ApiResource(model = Article.class)
 @Path("articles")
-@Produces({"application/vnd.api+json", MediaType.APPLICATION_JSON})
-@Consumes({"application/vnd.api+json", MediaType.APPLICATION_JSON})
+@Produces({ "application/vnd.api+json", MediaType.APPLICATION_JSON })
+@Consumes({ "application/vnd.api+json", MediaType.APPLICATION_JSON })
 public class ArticlesResource {
-	
-	@Inject
-	private DataStore store;
 
-	@GET
-	public Response getArticles() {
-		return Response.ok(store.getArticles()).build();
-	}
-	
-	@GET
-	@Path("{id}")
-	public Response getArticle(@PathParam("id") String id) {
-		return Response.ok(store.getArticle(id)).build();
-	}
-	
-	@GET
-	@Path("{id}/author")
-	public Response getAuthor(@PathParam("id") String id) {	    
-		return Response.ok(store.getAuthor(id)).build();
-	}
+  @Inject
+  private DataStore store;
+
+  @GET
+  public Response getArticles() {
+    return Response.ok(store.getArticles()).build();
+  }
+
+  @GET
+  @Path("{id}")
+  public Response getArticle(@PathParam("id") final String id) {
+    return Response.ok(store.getArticle(id)).build();
+  }
+
+  @GET
+  @Path("{id}/author")
+  public Response getAuthor(@PathParam("id") final String id) {
+    return Response.ok(store.getAuthor(id)).build();
+  }
 }
