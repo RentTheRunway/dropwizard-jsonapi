@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.rtr.dropwizard.jsonapi</groupId>
 	<artifactId>dropwizard-jsonapi-parent</artifactId>
-	<version>0.21-SNAPSHOT</version>
+	<version>0.21</version>
 	<packaging>pom</packaging>
 
 	<name>Dropwizard JSONAP Extension</name>
@@ -18,7 +17,7 @@
 	<scm>
 		<connection>scm:git:git@github.com:RentTheRunway2/dropwizard-jsonapi.git</connection>
 		<url>scm:git:git@github.com:RentTheRunway2/dropwizard-jsonapi.git</url>
-		<tag>v0.6</tag>
+		<tag>v0.21</tag>
 	</scm>
 
 	<properties>
