@@ -13,17 +13,8 @@ import java.util.List;
 
 public class ResponseData {
   private static final Logger log = LoggerFactory.getLogger(ResponseData.class);
-  String type;
   String id;
   Object attributes;
-
-  public String getType() {
-    return type;
-  }
-
-  public void setType(final String type) {
-    this.type = type;
-  }
 
   public String getId() {
     return id;

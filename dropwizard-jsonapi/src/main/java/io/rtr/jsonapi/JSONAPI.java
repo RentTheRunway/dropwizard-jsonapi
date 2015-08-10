@@ -174,7 +174,6 @@ public class JSONAPI {
         data.attributes = null;
       }
       doc.setData(data);
-      doc.setType(getType(data.attributes));
 
       if (!includes.isEmpty()) {
         doc.setIncluded(includes);
