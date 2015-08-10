@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>dropwizard-jsonapi-parent</artifactId>
 		<groupId>io.rtr.dropwizard.jsonapi</groupId>
-		<version>0.21</version>
+		<version>0.22-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
