@@ -118,7 +118,6 @@ public class JsonApiResponseFilter implements ContainerResponseFilter {
     }
     ResponseData responseData = new ResponseData();
     responseData.setAttributes(entity);
-    responseData.setType(entity.getClass().getTypeName());
     responseData.setId(getId(entity));
     final ResourceObjectBuilder dataBuilder = JSONAPI.data(responseData);
     if (m != null) {
@@ -161,7 +160,6 @@ public class JsonApiResponseFilter implements ContainerResponseFilter {
     }
     ResponseData responseData = new ResponseData();
     responseData.setAttributes(entity);
-    responseData.setType(entity.getClass().getTypeName());
     responseData.setId(getId(entity));
     final JSONAPI.IncludesResourceObjectBuilders dataBuilder = JSONAPI.includesData(responseData);
     try {
